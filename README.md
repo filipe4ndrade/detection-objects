@@ -12,6 +12,7 @@ Este projeto foi criado por José Filipe em colaboração com a Softex e o IFMA 
    - [**Detecção de Objetos**](#detecção-de-objetos)
    - [**Síntese de Fala**](#síntese-de-fala)
    - [**Registro de Resultados**](#registro-de-resultados)
+6. [**Perspectiva Futura**](#perspectiva-futura)
 
 ## Introdução
 
@@ -75,6 +76,9 @@ Para usar a aplicação, siga estas etapas:
 
 A detecção de objetos é realizada utilizando o framework YOLO (You Only Look Once) com o modelo YOLOv4-tiny. O código processa cada quadro do vídeo, pré-processando-o e passando-o pelo modelo. Os objetos detectados são comparados com os rótulos definidos no arquivo `yolo.nomes`. O código exibe as caixas delimitadoras dos objetos detectados e seus rótulos no vídeo.
 
+<img src="src/celular.png" alt="Exemplo Celular" width="400">
+
+
 ### Síntese de Fala
 
 Quando um objeto é detectado, o código utiliza a biblioteca `pyttsx3` para sintetizar a fala e anunciar o nome do objeto ao usuário por meio de áudio. O texto a ser sintetizado é obtido dos rótulos dos objetos detectados.
@@ -82,3 +86,12 @@ Quando um objeto é detectado, o código utiliza a biblioteca `pyttsx3` para sin
 ### Registro de Resultados
 
 Os resultados da detecção são registrados em um arquivo CSV chamado `teste.csv`. Cada vez que um objeto é detectado, os rótulos dos objetos e suas acurácias são registrados no arquivo. Isso permite rastrear os objetos detectados e suas respectivas confianças ao longo do tempo.
+
+## Perspectiva Futura
+
+Estamos focados em aprimorar e expandir a aplicação no futuro. Uma das nossas metas é melhorar continuamente o desempenho e a eficiência do código, aprimorando algoritmos de detecção e adotando práticas de programação mais eficazes. Queremos tornar os resultados mais informativos, buscando incluir informações contextuais, como relatórios detalhados, para proporcionar aos deficientes visuais uma compreensão mais completa do ambiente e melhorar a análise do resultado.
+
+Consideramos explorar o ecossistema do Darknet YOLO para insights valiosos e testar outras versões e modelos de dataset, visando aprimorar a detecção de objetos, pelo [repositório oficial do Darknet](https://github.com/AlexeyAB/darknet). A criação de um dataset personalizado com objetos relevantes para a mobilidade dos deficientes visuais é uma estratégia que pode melhorar significativamente a precisão da detecção.
+
+Além disso, buscamos aprimorar a interface gráfica, visando oferecer uma experiência mais intuitiva aos usuários, com opções mais claras e feedback visual mais informativo. Olhando para o futuro, estamos explorando o desenvolvimento de óculos inteligentes para deficientes visuais. A ideia é integrar componentes como ESP-Cam e sensores ultrassônicos, aproveitando a experiência adquirida até o momento para criar um protótipo funcional e eficaz.
+
