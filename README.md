@@ -1,6 +1,6 @@
 # Assistência à Mobilidade para Deficientes Visuais
 
-Este projeto foi criado por José Filipe em colaboração com a Softex e o IFMA - Instituto Federal do Maranhão. Ele faz parte de uma residência em Inteligência Artificial e tem como objetivo fornecer assistência à mobilidade de deficientes visuais em suas residências, utilizando inteligência artificial para detectar objetos em tempo real e anunciar o nome dos objetos detectados por meio de síntese de fala.
+Este projeto foi criado por José Filipe, com menoria dos professores Josenildo Costa da Silva, João Oliveira,... em colaboração com a Softex e o IFMA - Instituto Federal do Maranhão. Ele faz parte de uma residência em Inteligência Artificial e tem como objetivo fornecer assistência à mobilidade de deficientes visuais em suas residências, utilizando inteligência artificial para detectar objetos em tempo real e anunciar o nome dos objetos detectados por meio de síntese de fala.
 
 ## Sumário
 
