@@ -45,6 +45,7 @@ engine = pyttsx3.init()
 last_detection_time = {}
 
 # Tempo mínimo (em segundos) entre as detecções do mesmo objeto
+# Necessário para controlar as repetições dos objetos na síntese de fala
 minimum_time_between_detections = 5.0
 
 # Função para a thread de leitura de áudio
@@ -62,8 +63,6 @@ audio_queue = queue.Queue()
 audio_thread = threading.Thread(target=audio_thread)
 audio_thread.daemon = True
 audio_thread.start()
-
-# Resto do código é o mesmo
 
 # Loop de captura e detecção dos objetos
 with open('teste.csv', 'w') as arquivo:
